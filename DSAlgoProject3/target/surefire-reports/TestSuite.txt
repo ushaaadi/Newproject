@@ -1,0 +1,82 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 14.99 s <<< FAILURE! -- in TestSuite
+testrunner1.TestRunner.runScenario["Verify navigation to Graph module", "DataStructures Navigation Page Validation"](3) -- Time elapsed: 14.50 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: div.dropdown-menu.show a.dropdown-item (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.4', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: /var/folders/s0/d7qpbdsd3qx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c1d8b8a3cb8d616a0e43b2e177c1d74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinition.Datastructuresnavigation.user_selects_module_from_dropdown(Datastructuresnavigation.java:44)
+	at ✽.User selects "Graph" from the Data Structures dropdown(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/Datastructures/Datastructures_navigation.feature:9)
+
+testrunner1.TestRunner.runScenario["Verify navigation to Stack module", "DataStructures Navigation Page Validation"](4) -- Time elapsed: 14.51 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: div.dropdown-menu.show a.dropdown-item (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.4', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: /var/folders/s0/d7qpbdsd3qx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c1d8b8a3cb8d616a0e43b2e177c1d74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinition.Datastructuresnavigation.user_selects_module_from_dropdown(Datastructuresnavigation.java:44)
+	at ✽.User selects "Stack" from the Data Structures dropdown(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/Datastructures/Datastructures_navigation.feature:9)
+
+testrunner1.TestRunner.runScenario["Verify navigation to Linked List module", "DataStructures Navigation Page Validation"](2) -- Time elapsed: 14.51 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: div.dropdown-menu.show a.dropdown-item (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.4', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: /var/folders/s0/d7qpbdsd3qx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c1d8b8a3cb8d616a0e43b2e177c1d74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinition.Datastructuresnavigation.user_selects_module_from_dropdown(Datastructuresnavigation.java:44)
+	at ✽.User selects "Linked List" from the Data Structures dropdown(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/Datastructures/Datastructures_navigation.feature:9)
+
+testrunner1.TestRunner.runScenario["Verify navigation to Queue module", "DataStructures Navigation Page Validation"](3) -- Time elapsed: 14.51 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: div.dropdown-menu.show a.dropdown-item (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.4', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: /var/folders/s0/d7qpbdsd3qx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c1d8b8a3cb8d616a0e43b2e177c1d74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinition.Datastructuresnavigation.user_selects_module_from_dropdown(Datastructuresnavigation.java:44)
+	at ✽.User selects "Queue" from the Data Structures dropdown(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/Datastructures/Datastructures_navigation.feature:9)
+
+testrunner1.TestRunner.runScenario["Verify navigation to Tree module", "DataStructures Navigation Page Validation"](5) -- Time elapsed: 14.51 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: div.dropdown-menu.show a.dropdown-item (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.4', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: /var/folders/s0/d7qpbdsd3qx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c1d8b8a3cb8d616a0e43b2e177c1d74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinition.Datastructuresnavigation.user_selects_module_from_dropdown(Datastructuresnavigation.java:44)
+	at ✽.User selects "Tree" from the Data Structures dropdown(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/Datastructures/Datastructures_navigation.feature:9)
+
+testrunner1.TestRunner.runScenario["Verify navigation to Arrays module", "DataStructures Navigation Page Validation"](6) -- Time elapsed: 14.52 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of all elements located by By.cssSelector: div.dropdown-menu.show a.dropdown-item (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.7.4', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: /var/folders/s0/d7qpbdsd3qx...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51714}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51714/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4c1d8b8a3cb8d616a0e43b2e177c1d74
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at stepdefinition.Datastructuresnavigation.user_selects_module_from_dropdown(Datastructuresnavigation.java:44)
+	at ✽.User selects "Arrays" from the Data Structures dropdown(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/Datastructures/Datastructures_navigation.feature:9)
+
