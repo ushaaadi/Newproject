@@ -69,7 +69,7 @@ public class Datastructuresnavigation {
     
     
     public Datastructuresnavigation() {
-        this.driver = Driverfactory.initializeDriver(); 
+        this.driver = Driverfactory.getDriver(); 
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.datastructures = new DatastructuresPages(driver); 
         driver.manage().window().maximize();

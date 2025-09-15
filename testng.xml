@@ -17,6 +17,15 @@
         </classes>
   </test> <!-- Test -->
   
+  
+  <test  name="SafariTest">
+   <parameter name="browser" value="safari" />
+        <classes>
+            <class name="testrunner1.TestRunner"/>
+        </classes>
+  </test> <!-- Test -->
+  
+  
 </suite> <!-- Suite -->
 
 

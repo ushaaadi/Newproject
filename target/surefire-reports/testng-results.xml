@@ -2,154 +2,26 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-10T16:09:03 EDT" name="Surefire suite" finished-at="2025-09-10T16:09:24 EDT" duration-ms="21127">
+  <suite started-at="2025-09-15T11:39:19 EDT" name="Surefire suite" finished-at="2025-09-15T11:39:43 EDT" duration-ms="23885">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-10T16:09:03 EDT" name="Surefire test" finished-at="2025-09-10T16:09:24 EDT" duration-ms="21127">
+    <test started-at="2025-09-15T11:39:19 EDT" name="Surefire test" finished-at="2025-09-15T11:39:43 EDT" duration-ms="23885">
       <class name="testrunner1.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:03 EDT" name="setUpClass" finished-at="2025-09-10T16:09:03 EDT" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:19 EDT" name="setUpClass" finished-at="2025-09-15T11:39:20 EDT" duration-ms="304" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@b5aa65b]]>
+                <![CDATA[org.testng.TestRunner@5dcbb60]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:09 EDT" duration-ms="5730" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check "Data structures-Introduction" Content display on DS page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:10 EDT" duration-ms="1556" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Check "Topics Covered" Content display on DS page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:10 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:13 EDT" duration-ms="2686" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Time Complexity page is accessible from Introduction"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:13 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:14 EDT" duration-ms="1295" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify content on Time Complexity page is displayed correctly"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:16 EDT" duration-ms="1710" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user is able to navigate to "try Editor" page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:16 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:17 EDT" duration-ms="1129" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error when click on Run button without entering code"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:17 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:18 EDT" duration-ms="1243" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error for invalid python code"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:20 EDT" duration-ms="1117" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user is able to see output for valid python code"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["DataStructures Page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:21 EDT" duration-ms="1482" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:36 EDT" duration-ms="16073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +37,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:21 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:22 EDT" duration-ms="1213" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:36 EDT" duration-ms="16001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check "Topics Covered" Content display on DS page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:36 EDT" duration-ms="16460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that user is able to navigate to "try Editor" page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:35 EDT" duration-ms="15808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that user is able to see output for valid python code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:36 EDT" duration-ms="16109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +101,87 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:22 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-10T16:09:24 EDT" duration-ms="1452" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:35 EDT" duration-ms="15193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify content on Time Complexity page is displayed correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:36 EDT" duration-ms="16009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check "Data structures-Introduction" Content display on DS page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:36 EDT" duration-ms="16043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that user receives error when click on Run button without entering code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:36 EDT" duration-ms="16410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that user receives error for invalid python code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:20 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:37 EDT" duration-ms="17483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Time Complexity page is accessible from Introduction"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:35 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T11:39:43 EDT" duration-ms="8232" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +197,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-10T16:09:24 EDT" name="tearDownClass" finished-at="2025-09-10T16:09:24 EDT" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@1a451d4d]" started-at="2025-09-15T11:39:43 EDT" name="tearDownClass" finished-at="2025-09-15T11:39:43 EDT" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
