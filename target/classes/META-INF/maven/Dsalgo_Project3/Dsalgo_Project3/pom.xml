@@ -1,4 +1,4 @@
-<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>Dsalgo_Project3</groupId>
   <artifactId>Dsalgo_Project3</artifactId>
@@ -22,19 +22,7 @@
     <version>7.23.0</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-junit</artifactId>
-    <version>7.23.0</version>
-    <scope>test</scope>
-</dependency>
-<!-- https://mvnrepository.com/artifact/junit/junit -->
-<dependency>
-    <groupId>junit</groupId>
-    <artifactId>junit</artifactId>
-    <version>4.8.1</version>
-    <scope>test</scope>
-</dependency>
+
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -86,6 +74,7 @@
     <version>2.20.1</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+
 <dependency>
     <groupId>tech.grasshopper</groupId>
     <artifactId>extentreports-cucumber7-adapter</artifactId>
@@ -118,7 +107,12 @@
     <version>4.0.0-beta-2</version>
 </dependency>
   
-  
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+</dependency>  
 
 
   
@@ -128,7 +122,7 @@
 			<artifactId>poi</artifactId>
 			<version>3.16-beta2</version>
 		</dependency>
-
+		
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>

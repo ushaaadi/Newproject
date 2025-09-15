@@ -28,7 +28,7 @@ import utilities.ConfigReader;
 
 public class RegisterTest {
 	
-	 WebDriver driver = Driverfactory.initializeDriver();
+	 WebDriver driver = Driverfactory.getDriver();
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    
 	    HomePage homepage = new HomePage(driver);

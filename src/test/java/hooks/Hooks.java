@@ -11,7 +11,8 @@ public class Hooks {
 
     @Before(order =0)
     public void setUp() {
-        driver = Driverfactory.initializeDriver();
+    	 String browserName = System.getProperty("browser", "chrome");
+        driver = Driverfactory.initializeDriver(browserName);
         driver.manage().window().maximize();
     }
     

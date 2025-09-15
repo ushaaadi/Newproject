@@ -1,350 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="0" failed="10" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-03T21:43:29 EDT" name="Default suite" finished-at="2025-09-03T21:43:32 EDT" duration-ms="3016">
+  <suite started-at="2025-09-15T12:08:47 EDT" name="Default suite" finished-at="2025-09-15T12:09:26 EDT" duration-ms="39413">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-03T21:43:29 EDT" name="Default test" finished-at="2025-09-03T21:43:32 EDT" duration-ms="3016">
+    <test started-at="2025-09-15T12:08:47 EDT" name="Default test" finished-at="2025-09-15T12:09:26 EDT" duration-ms="39413">
       <class name="testrunner1.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:29 EDT" name="setUpClass" finished-at="2025-09-03T21:43:29 EDT" duration-ms="363" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:47 EDT" name="setUpClass" finished-at="2025-09-15T12:08:48 EDT" duration-ms="773" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2ab5afc7]]>
+                <![CDATA[org.testng.TestRunner@2a551a63]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="2508" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:14 EDT" duration-ms="26397" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify that user able to land on Home page after entering valid Username and Password fields"]]>
+                <![CDATA["Verify that user is able to navigate to "try Editor" page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.ExceptionInInitializerError">
-            <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:4)
-Caused by: java.lang.RuntimeException: Unable to find config.properties in resources folder.
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-... 3 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="9" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:09 EDT" duration-ms="21654" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify prompt to register is validated"]]>
+                <![CDATA["Check "Topics Covered" Content display on DS page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:8)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:14 EDT" duration-ms="26103" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify  error message for all empty fields during Login"]]>
+                <![CDATA["Verify that user receives error when click on Run button without entering code"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:12)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="12" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:09 EDT" duration-ms="21387" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify error message for empty Password field during Login"]]>
+                <![CDATA["Check "Data structures-Introduction" Content display on DS page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:16)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="9" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:09 EDT" duration-ms="21543" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify error message for empty Username field during Login"]]>
+                <![CDATA["Verify content on Time Complexity page is displayed correctly"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:20)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:15 EDT" duration-ms="27180" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify error message for invalid Username field during Login"]]>
+                <![CDATA["Verify Time Complexity page is accessible from Introduction"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:24)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="6" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:15 EDT" duration-ms="26996" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Datastructures dropdown is visible"]]>
+                <![CDATA["Verify that user receives error for invalid python code"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:28)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="7" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:15 EDT" duration-ms="27277" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify RegisterLink is visible on the login page"]]>
+                <![CDATA["Verify Output area clears on new run"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:32)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="7" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:12 EDT" duration-ms="23860" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Signin Link is visible"]]>
+                <![CDATA["Verify Navigate back from editor to topic page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:36)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-03T21:43:32 EDT" duration-ms="7" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:08:48 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:15 EDT" duration-ms="27010" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Signin navigates to home page"]]>
+                <![CDATA["Verify that user is able to see output for valid python code"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["DataStructures Page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NoClassDefFoundError">
-            <message>
-              <![CDATA[Could not initialize class utilities.ConfigReader]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoClassDefFoundError: Could not initialize class utilities.ConfigReader
-at pageobject.LoginPage.openloginpage(LoginPage.java:49)
-at stepdefinition.LoginTests.userOnLoginPage(LoginTests.java:27)
-at ✽.User is on the login page(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:40)
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.RuntimeException: Unable to find config.properties in resources folder. [in thread "main"]
-at utilities.ConfigReader.<clinit>(ConfigReader.java:13)
-... 3 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@7817fd62]" started-at="2025-09-03T21:43:32 EDT" name="tearDownClass" finished-at="2025-09-03T21:43:32 EDT" duration-ms="29" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:09:09 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-15T12:09:25 EDT" duration-ms="16307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify behavior when user clicks back button after writing code on Time Complexity Run page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DataStructures Page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@fa4c865]" started-at="2025-09-15T12:09:26 EDT" name="tearDownClass" finished-at="2025-09-15T12:09:26 EDT" duration-ms="597" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
