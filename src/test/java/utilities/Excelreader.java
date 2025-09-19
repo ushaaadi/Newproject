@@ -40,6 +40,17 @@ public class Excelreader {
 
 	        return data;
 	    }
+		
+    public static Map<String, String> getTestDataByAction(String sheetname, String actionname) {
+	    	// Map<String, String> data = Excelreader.getTestDataByAction(excelpath,sheetname, "login-valid");
+	        List<Map<String, String>> allData = getData(sheetname);
+	        for (Map<String, String> row : allData) {
+	            if (row.containsKey("actionname") && row.get("actionname").equalsIgnoreCase(actionname)) {
+	                return row;
+	            }
+	        }
+	        throw new RuntimeException("No data found for action: " + actionname);
+	    }
 	}
 
 
