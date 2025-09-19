@@ -5,6 +5,10 @@ package stepdefinition;
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -13,24 +17,32 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobject.LoginPage;
 import utilities.ConfigReader;
+import utilities.Excelreader;
 
 
 public class LoginTests extends BaseSteps {
 	LoginPage loginpage;
 	WebDriverWait wait;
-	
+	String excelpath = "src/test/resources/data/Testcase.xlsx";
+	String sheetname = "loginscenario";
 
 	@Given("User is on the login page")
 	public void userOnLoginPage() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		loginpage = new LoginPage(driver);
 		loginpage.openloginpage();
+		System.out.println("user is on the loging page");
+		
 	}
 
 	@When("User enters valid credentials and clicks login button")
 	public void userentersvalidcredentials() {
-		loginpage.enterUsername(ConfigReader.get("username"));
-        loginpage.enterPassword(ConfigReader.get("password"));
+		 Map<String, String> data = Excelreader.getTestDataByAction(sheetname, "login-valid");
+		//Map<String, String> data = Excelreader.getTestDataByAction(excelpath,sheetname,"login-valid");
+		//loginpage.enterUsername(data.get("username"));
+       // loginpage.enterPassword(data.get("password"));
+		 System.out.println(data);
+        System.out.println("Username is==" +data.get("username"));
         loginpage.clickLoginButton();
 	}
 
@@ -66,7 +78,8 @@ public class LoginTests extends BaseSteps {
 	}
 	@When("User clicks login button after entering the {string} and leaves {string} textbox empty")
 	public void usersenteredusername(String textbox1, String emptytextbox2) {
-		loginpage.enterUsername(ConfigReader.get("username"));
+		Map<String, String> data = Excelreader.getTestDataByAction(sheetname, "login_empty_pass");
+		loginpage.enterUsername(data.get("username"));
 		loginpage.clearpassword();
 		loginpage.clickLoginButton();
 	}
@@ -79,15 +92,19 @@ public class LoginTests extends BaseSteps {
 
 	@When("User clicks login button after entering the Password only")
 	public void userenteredpassword() {
+		 Map<String, String> data = Excelreader.getTestDataByAction(sheetname, "login_empty_user");
 		loginpage.clearusername();
-		loginpage.enterPassword(ConfigReader.get("password"));
+		loginpage.enterPassword(data.get("password"));
 		loginpage.clickLoginButton();
 	}
 
 	@When("User clicks login button after entering invalid username and valid password")
 	public void userenteredinvalidusername() {
-		loginpage.enterUsername("userx@graphic.com");
-		loginpage.enterPassword(ConfigReader.get("password"));
+		Map<String, String> data = Excelreader.getTestDataByAction(sheetname, "login_invalid_user");
+        loginpage.enterUsername(data.get("username"));
+        loginpage.enterPassword(data.get("password"));
+		//loginpage.enterUsername("userx@graphic.com");
+		//loginpage.enterPassword(ConfigReader.get("password"));
 		loginpage.clickLoginButton();
 	}
 
@@ -99,8 +116,11 @@ public class LoginTests extends BaseSteps {
 
 	@When("User clicks login button after entering valid username and invalid password")
 	public void userenteredinvalidpassword() {
-		loginpage.enterUsername(ConfigReader.get("username"));
-		loginpage.enterPassword("Varlet3737");
+		Map<String, String> data = Excelreader.getTestDataByAction(sheetname, "login_invalid_pass");
+        loginpage.enterUsername(data.get("username"));
+        loginpage.enterPassword(data.get("password"));
+		//loginpage.enterUsername(ConfigReader.get("username"));
+		//loginpage.enterPassword("Varlet3737");
 		loginpage.clickLoginButton();
 	}
 
@@ -137,6 +157,8 @@ public class LoginTests extends BaseSteps {
     public void user_navigates_signin_link() {
      //   loginpage.userclicksdropdown();
        // loginpage.userclickssigninlink();
+    	
+
     	Assert.assertTrue(loginpage.isSigninLinkVisible(), "Signin link is not visible on login page!");
     }
     

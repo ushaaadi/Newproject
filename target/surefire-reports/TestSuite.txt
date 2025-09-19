@@ -1,4 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.09 s -- in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.741 s <<< FAILURE! -- in TestSuite
+testrunner1.TestRunner.runScenario["Verify that user able to land on Home page after entering valid Username and Password fields", "Login Page validation"](1) -- Time elapsed: 5.044 s <<< FAILURE!
+java.lang.RuntimeException: Failed to read Excel file: Sheet loginscenario not found
+	at utilities.Excelreader.getData(Excelreader.java:38)
+	at utilities.Excelreader.getTestDataByAction(Excelreader.java:46)
+	at stepdefinition.LoginTests.userentersvalidcredentials(LoginTests.java:36)
+	at ✽.User enters valid credentials and clicks login button(file:///Users/aapu/eclipse-workspace/Dsalgo_Project3/src/test/resources/features/login/Login.feature:11)
+

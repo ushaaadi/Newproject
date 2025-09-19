@@ -1,12 +1,10 @@
 Base/Driverfactory.class
-stepdefinition/ArrayTest.class
 testrunner1/TestRunner.class
-pageobject/ArraysPage.class
 stepdefinition/BaseSteps.class
-utilities/jsonreader.class
 stepdefinition/LoginTests.class
 utilities/LoggerLoad.class
 utilities/ConfigReader.class
+utilities/Excelreader.class
 stepdefinition/RegisterTest.class
 pageobject/LoginPage.class
 stepdefinition/DatastructuresTest.class

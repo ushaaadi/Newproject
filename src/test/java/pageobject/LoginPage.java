@@ -33,7 +33,8 @@ public class LoginPage {
 	WebElement registerlink;
 	//@FindBy(xpath = "//a[@href='/login']")
 	//WebElement signinlink;
-	@FindBy(css = "ul a[href='/login']")
+	//@FindBy(css = "ul a[href='/login']")
+	@FindBy(linkText = "Sign in")
 	WebElement signinlink;
 	@FindBy(css = ".alert-primary")
 	WebElement loginErrorMessage;
@@ -201,14 +202,9 @@ public class LoginPage {
 	        System.out.println("Signin link not found or not visible.");
 	        return false;
 	    }
-		
-		
-		
+				
 }
-		
-
-		
-	
+			
 
 }
 	
