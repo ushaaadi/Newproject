@@ -158,12 +158,12 @@ import utilities.ConfigReader;
 	        //wait.until(ExpectedConditions.elementToBeClickable(runButton)).click();
 	    
 
-	    public void enterInvalidPythonCode() {
-	        String invalidCode = "print\"hello";  // Invalid Python syntax
+	    public void enterInvalidPythonCode(String fetchinvalidcode) {
+	       // String invalidCode = "print\"hello";  // Invalid Python syntax
 	        wait.until(ExpectedConditions.presenceOfElementLocated(By.className("CodeMirror")));
 	        ((JavascriptExecutor) driver).executeScript(
 	            "document.querySelector('.CodeMirror').CodeMirror.setValue(arguments[0]);",
-	            invalidCode
+	            fetchinvalidcode
 	        );
 	    }
 
@@ -282,13 +282,13 @@ import utilities.ConfigReader;
 	        return "print('Hello DS Algo')";
 	    }
 
-	    public String getFirstValidCode() {
-	        return "print('Hi')";
-	    }
+	  //  public String getFirstValidCode() {
+	  //      return "print('Hi')";
+	   // }
 
-	    public String getModifiedValidCode() {
-	        return "print('Hi NumpyNinja')";
-	    }
+	   // public String getModifiedValidCode() {
+	   //     return "print('Hi NumpyNinja')";
+	  //  }
 
 	    public String getFinalBackArrowCode() {
 	        return "print('Hello DS NumpyNinja')";

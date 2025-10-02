@@ -2,16 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 
-<suite name="CrossBrowserSuite" parallel="tests" thread-count="2">
-  <test  name="Chrome Test">
-   <parameter name="browser" value="chrome" />
+<suite name="CrossBrowserSuite" parallel="tests" thread-count="3">
+  <test  name="ChromeTest">
+   <parameter name="browser" value="chrome"/>
         <classes>
             <class name="testrunner1.TestRunner"/>
         </classes>
   </test> <!-- Test -->
   
   <test  name="FirefoxTest">
-   <parameter name="browser" value="firefox" />
+   <parameter name="browser" value="firefox"/>
         <classes>
             <class name="testrunner1.TestRunner"/>
         </classes>
@@ -19,7 +19,7 @@
   
   
   <test  name="SafariTest">
-   <parameter name="browser" value="safari" />
+   <parameter name="browser" value="safari"/>
         <classes>
             <class name="testrunner1.TestRunner"/>
         </classes>
@@ -27,12 +27,4 @@
   
   
 </suite> <!-- Suite -->
-
-
-
-
-
-
-
-
 

@@ -1,0 +1,200 @@
+<html>
+<head>
+<title>TestNG:  SafariTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SafariTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 02 13:32:01 EDT 2025</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (878 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Signin navigates to home page", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace621064852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace621064852'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Signin Link is visible from Home Page", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2033433056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2033433056'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message for empty Username field during Login", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2097076555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2097076555'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify prompt to register is validated", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1708499792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1708499792'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Datastructures dropdown is visible", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1431394233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431394233'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  error message for all empty fields during Login", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace820970022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace820970022'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message for empty Password field during Login", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2028333164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2028333164'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user able to land on Home page after entering valid Username and Password fields", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1932802718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1932802718'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message for invalid Username field during Login", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1644543353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1644543353'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify RegisterLink is visible on the login page", "Login Page validation"</td>
+<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1388499679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1388499679'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
+	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
+	at hooks.Hooks.setUp(Hooks.java:19)
+</pre></div></td>
+<td>0</td>
+<td>testrunner1.TestRunner@10aa41f2</td></tr>
+</table><p>
+</body>
+</html>

@@ -172,6 +172,7 @@ public class RegisterPage {
 	public void clickNumpyNinja() {
 		// TODO Auto-generated method stub
 		 logoverification.click();
+		
 	}
 
 	public WebElement getstartedbutton() {

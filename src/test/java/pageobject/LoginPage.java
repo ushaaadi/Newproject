@@ -12,9 +12,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import utilities.ConfigReader;
+import utilities.Excelreader;
 
 import java.time.Duration;
+import java.util.Map;
 
 
 
@@ -31,10 +34,11 @@ public class LoginPage {
     WebElement userseesintroductionpage;
 	@FindBy(xpath = "//a[@href='/register']")
 	WebElement registerlink;
-	//@FindBy(xpath = "//a[@href='/login']")
+	@FindBy(xpath = "//a[@href='/login']")
 	//WebElement signinlink;
 	//@FindBy(css = "ul a[href='/login']")
-	@FindBy(linkText = "Sign in")
+	//@FindBy(linkText = "Sign in")
+	//@FindBy(xpath = "//a[text()='Sign in']")
 	WebElement signinlink;
 	@FindBy(css = ".alert-primary")
 	WebElement loginErrorMessage;
@@ -47,7 +51,8 @@ public class LoginPage {
 
 	
 	 public LoginPage(WebDriver driver) {
-	        this.driver = driver;
+	       this.driver = driver;
+		 //WebDriver driver = Driverfactory.getDriver();
 	        PageFactory.initElements(driver, this);	
 	    }
 	// Actions
@@ -204,6 +209,22 @@ public class LoginPage {
 	    }
 				
 }
+		public void fetchexceldata() {
+			Map<String, String> loginData = Excelreader.getTestDataByAction("loginscenario","login-valid");
+	    	
+		       String Excelusername = loginData.get("username");
+		       System.out.println("Excel username - "+Excelusername);
+		       String Excelpassword = loginData.get("password");
+		       System.out.println("Excel password - "+Excelpassword);
+		       
+		       if (Excelusername != null && !Excelusername.trim().isEmpty()) {
+		           usernameinput.sendKeys(Excelusername);
+		           
+		       }
+
+		       passwordinput.sendKeys(Excelpassword);
+		       
+		    	loginbtn.click();		}
 			
 
 }

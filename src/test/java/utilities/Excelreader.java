@@ -3,54 +3,59 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.InputStream;
+import java.io.IOException;
+
 import java.util.*;
 
 public class Excelreader {
-	 public static List<Map<String, String>> getData(String sheetName) {
-	        List<Map<String, String>> data = new ArrayList<>();
-	        try (InputStream fis = new FileInputStream("src/test/resources/data/TestCase.xlsx");
-	             Workbook workbook = new XSSFWorkbook(fis)) {
+	public static String filepath = "src/test/resources/data/testdata.xlsx";
+	public static List<Map<String, String>> getData(String sheetName) {
+        List<Map<String, String>> excelData = new ArrayList<>();
+        try (FileInputStream fis = new FileInputStream(filepath);
+        		
+             Workbook workbook = new XSSFWorkbook(fis)) {
+        	System.out.println("Excel file loaded: " + filepath);
+            System.out.println("Available sheets:");
+            for (int i = 0; i < workbook.getNumberOfSheets(); i++) {
+                System.out.println(" - " + workbook.getSheetName(i));
+                System.out.println(" The list of all column names as "+workbook.getAllNames());
+            }
+        	
+            Sheet sheet = workbook.getSheet(sheetName);
+            Row headerRow = sheet.getRow(0);
+            int colCount = headerRow.getLastCellNum();
+            int rowCount = sheet.getPhysicalNumberOfRows();
+            for (int r = 1; r < rowCount; r++) {
+                Row currentRow = sheet.getRow(r);
+                Map<String, String> rowData = new HashMap<>();
+                for (int c = 0; c < colCount; c++) {
+                    String columnName = headerRow.getCell(c).getStringCellValue();
+                    Cell cell = currentRow.getCell(c);
+                    String cellValue = (cell == null) ? "" : cell.toString().trim();
+                    rowData.put(columnName, cellValue);
+                }
+                excelData.add(rowData);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        
+	 }
+    return excelData;
+}
+// Fetch single row by TestCaseID from a sheet
+//public static Map<String, String> getRowByTestCaseId(String sheetName, String actionname) {
+	public static Map<String, String> getTestDataByAction(String sheetName, String actionname) {
+	    List<Map<String, String>> allData = getData(sheetName);
 
-	            Sheet sheet = workbook.getSheet(sheetName);
-	            if (sheet == null) throw new RuntimeException("Sheet " + sheetName + " not found");
-
-	            Row headerRow = sheet.getRow(0);
-	            int colCount = headerRow.getLastCellNum();
-
-	            for (int i = 1; i <= sheet.getLastRowNum(); i++) {
-	                Map<String, String> rowData = new HashMap<>();
-	                Row row = sheet.getRow(i);
-	                if (row == null) continue;
-
-	                for (int j = 0; j < colCount; j++) {
-	                    Cell header = headerRow.getCell(j);
-	                    Cell cell = row.getCell(j);
-	                    String key = header != null ? header.toString() : "Col" + j;
-	                    String value = cell != null ? cell.toString() : "";
-	                    rowData.put(key.trim(), value.trim());
-	                }
-	                data.add(rowData);
-	            }
-
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	            throw new RuntimeException("Failed to read Excel file: " + e.getMessage());
+	    for (Map<String, String> row : allData) {
+	        String action = row.get("actionname");
+	        if (action != null && action.equalsIgnoreCase(actionname)) {
+	            return row;
 	        }
+	    }
 
-	        return data;
-	    }
-		
-    public static Map<String, String> getTestDataByAction(String sheetname, String actionname) {
-	    	// Map<String, String> data = Excelreader.getTestDataByAction(excelpath,sheetname, "login-valid");
-	        List<Map<String, String>> allData = getData(sheetname);
-	        for (Map<String, String> row : allData) {
-	            if (row.containsKey("actionname") && row.get("actionname").equalsIgnoreCase(actionname)) {
-	                return row;
-	            }
-	        }
-	        throw new RuntimeException("No data found for action: " + actionname);
-	    }
+	    System.out.println("No matching actionname found for: " + actionname);
+	    return new HashMap<>();
 	}
 
-
+}
