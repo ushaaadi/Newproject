@@ -17,7 +17,7 @@ public class RegisterPage {
 	WebDriver driver;
 	WebDriverWait wait;
 	String registerUrl = ConfigReader.get("register.url.full");
-	
+
 	@FindBy(id = "id_username")
 	WebElement usernameinput;
 	@FindBy(id = "id_password1")
@@ -29,70 +29,69 @@ public class RegisterPage {
 	@FindBy(css = "div.alert.alert-primary[role='alert']")
 	WebElement alertMessage; // This will serve both success and error messages
 
-	
-	
-	//@FindBy(css = "div.alert.alert-primary[role='alert']")
-	//WebElement successMessage;
-	//@FindBy(xpath = "//div[@class='alert alert-primary']")
-	//WebElement errorMessage;
-	//@FindBy(xpath = "//div[contains(@class, 'alert') and contains(text(), 'password_mismatch')]")
-    //WebElement errorMessage;
+	// @FindBy(css = "div.alert.alert-primary[role='alert']")
+	// WebElement successMessage;
+	// @FindBy(xpath = "//div[@class='alert alert-primary']")
+	// WebElement errorMessage;
+	// @FindBy(xpath = "//div[contains(@class, 'alert') and contains(text(),
+	// 'password_mismatch')]")
+	// WebElement errorMessage;
 
-	@FindBy(xpath= "//div[@class='alert alert-primary' and normalize-space(text())='password_mismatch:The two password fields didn’t match.']")
-	 WebElement passworderrorMessage;
+	@FindBy(xpath = "//div[@class='alert alert-primary' and normalize-space(text())='password_mismatch:The two password fields didn’t match.']")
+	WebElement passworderrorMessage;
 
-	//@FindBy(xpath = "//div[@class='alert alert-primary' and @role='alert']")
-	//WebElement errorMessage;
-    @FindBy(xpath = "//h5[contains(text(),'Data Structures-Introduction')]")
+	// @FindBy(xpath = "//div[@class='alert alert-primary' and @role='alert']")
+	// WebElement errorMessage;
+	@FindBy(xpath = "//h5[contains(text(),'Data Structures-Introduction')]")
 	WebElement registersuccess;
-   
-    @FindBy(xpath = "//a[@href='/login']")
-    WebElement loginlink;
-    
-    @FindBy(xpath = "//a[contains(text(),'NumpyNinja')]")
-    WebElement logoverification;
-    
-    @FindBy(xpath = "//a[@href='/home']")
-    WebElement homegetstarted;
-   // @FindBy(linkText = "Register")
-    @FindBy(xpath = "//a[@href='/register']")
-    WebElement clickregisterlink;
-	//public String getErrorMessage() {
-	   // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	 //   wait.until(ExpectedConditions.visibilityOf(passworderrorMessage));
-	   // return passworderrorMessage.getText().trim();
-	//}
-	 
+
+	@FindBy(xpath = "//a[@href='/login']")
+	WebElement loginlink;
+
+	@FindBy(xpath = "//a[contains(text(),'NumpyNinja')]")
+	WebElement logoverification;
+
+	@FindBy(xpath = "//a[@href='/home']")
+	WebElement homegetstarted;
+	// @FindBy(linkText = "Register")
+	@FindBy(xpath = "//a[@href='/register']")
+	WebElement clickregisterlink;
+	// public String getErrorMessage() {
+	// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	// wait.until(ExpectedConditions.visibilityOf(passworderrorMessage));
+	// return passworderrorMessage.getText().trim();
+	// }
+
 	public RegisterPage(WebDriver driver) {
-        this.driver = driver;
-        //this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
-        PageFactory.initElements(driver, this);	
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
-    }
-	 
+		this.driver = driver;
+		// this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		PageFactory.initElements(driver, this);
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	}
+
 	public String getCurrentUrl() {
 		return driver.getCurrentUrl();
 	}
 
 	public void openregisterpage() {
 		driver.get(registerUrl);
-		
+
 	}
 
 	public void enterUsername(String username) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
-        wait.until(ExpectedConditions.visibilityOf(usernameinput));
+		wait.until(ExpectedConditions.visibilityOf(usernameinput));
 		usernameinput.clear();
-        usernameinput.sendKeys(username);
-		
+		usernameinput.sendKeys(username);
+
 	}
 
 	public void enterPassword(String password) {
-		 System.out.println("Entering password: '" + password + "'");
-		 wait.until(ExpectedConditions.visibilityOf(passwordinputfield));
-		 passwordinputfield.clear();
-		 passwordinputfield.sendKeys(password);
-		
+		System.out.println("Entering password: '" + password + "'");
+		wait.until(ExpectedConditions.visibilityOf(passwordinputfield));
+		passwordinputfield.clear();
+		passwordinputfield.sendKeys(password);
+
 	}
 
 	public void enterPasswordconfirmation(String passwordconfirmfield) {
@@ -100,9 +99,8 @@ public class RegisterPage {
 		wait.until(ExpectedConditions.visibilityOf(passwordinputconfirmfield));
 		passwordinputconfirmfield.clear();
 		passwordinputconfirmfield.sendKeys(passwordconfirmfield);
-		
+
 	}
-	
 
 	public void clickRegisterButton() {
 		System.out.println("Values in fields before register: ");
@@ -110,55 +108,54 @@ public class RegisterPage {
 		System.out.println("Confirm: " + passwordinputconfirmfield.getAttribute("value"));
 		wait.until(ExpectedConditions.elementToBeClickable(registerbtn));
 		registerbtn.click();
-		
+
 	}
 
-	//public String gettextmsg() {
-	//	 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	//	 wait.until(ExpectedConditions.visibilityOf(successMessage));
-	//	return successMessage.getText().trim();
-	//}
+	// public String gettextmsg() {
+	// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	// wait.until(ExpectedConditions.visibilityOf(successMessage));
+	// return successMessage.getText().trim();
+	// }
 
 	public boolean isRegistrationSuccessful() {
 		try {
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	        wait.until(ExpectedConditions.visibilityOf(registersuccess));
-		return registersuccess.isDisplayed();
-		
-	} catch (Exception e) {
-	
-	return false;
-}
-	
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(registersuccess));
+			return registersuccess.isDisplayed();
+
+		} catch (Exception e) {
+
+			return false;
+		}
+
 	}
+
 	public String getPasswordErrorMessageElement() {
 		return passworderrorMessage.getText();
 	}
+
 	public String getAlertMessage() {
-	  
-	    wait.until(ExpectedConditions.visibilityOf(alertMessage));
-	    return alertMessage.getText().trim();
+
+		wait.until(ExpectedConditions.visibilityOf(alertMessage));
+		return alertMessage.getText().trim();
 	}
 
 	public void clickloginlink() {
-		new WebDriverWait(driver, Duration.ofSeconds(10))
-        .until(ExpectedConditions.elementToBeClickable(loginlink))
-        .click();
-		
-		
+		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(loginlink))
+				.click();
+
 	}
 
 	public void ScrolltoNumpyNinja() {
-		 try {
-		        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		        wait.until(ExpectedConditions.visibilityOf(logoverification));
-		        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", logoverification);
-		    } catch (Exception e) {
-		        System.out.println("Error scrolling to NumpyNinja: " + e.getMessage());
-		        throw e; 
-		    }
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(logoverification));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", logoverification);
+		} catch (Exception e) {
+			System.out.println("Error scrolling to NumpyNinja: " + e.getMessage());
+			throw e;
 		}
-
+	}
 
 	public boolean isNumpyNinjaVisible() {
 		try {
@@ -171,47 +168,48 @@ public class RegisterPage {
 
 	public void clickNumpyNinja() {
 		// TODO Auto-generated method stub
-		 logoverification.click();
-		
+		logoverification.click();
+
 	}
 
 	public WebElement getstartedbutton() {
 		wait.until(ExpectedConditions.elementToBeClickable(homegetstarted));
-		
+
 		return homegetstarted;
 	}
 
 	public boolean isGetStartedVisible() {
-	return homegetstarted.isDisplayed();
-		
+		return homegetstarted.isDisplayed();
+
 	}
 
 	public boolean isregisterlinkVisible() {
 		return clickregisterlink.isDisplayed();
-	
-}
-	public void scrollToAndVerifyRegisterLink() {
-		 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickregisterlink);
-		    wait.until(ExpectedConditions.visibilityOf(clickregisterlink));
-		
+
 	}
 
-	//public void clickRegisterlink(String linkText) {
-		//wait.until(ExpectedConditions.visibilityOf(clickregisterlink));
-	//wait.until(ExpectedConditions.elementToBeClickable(clickregisterlink)).click();
-		//clickregisterlink.click();
-	//}
+	public void scrollToAndVerifyRegisterLink() {
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", clickregisterlink);
+		wait.until(ExpectedConditions.visibilityOf(clickregisterlink));
+
+	}
+
+	// public void clickRegisterlink(String linkText) {
+	// wait.until(ExpectedConditions.visibilityOf(clickregisterlink));
+	// wait.until(ExpectedConditions.elementToBeClickable(clickregisterlink)).click();
+	// clickregisterlink.click();
+	// }
 
 	public void scrollToSigninLink() {
-		 try {
-		        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		        wait.until(ExpectedConditions.visibilityOf(loginlink));
-		        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginlink);
-		    } catch (Exception e) {
-		        System.out.println("Error scrolling to signin: " + e.getMessage());
-		        throw e; // rethrow for test to fail with proper reason
-		    }
-		
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.visibilityOf(loginlink));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", loginlink);
+		} catch (Exception e) {
+			System.out.println("Error scrolling to signin: " + e.getMessage());
+			throw e; // rethrow for test to fail with proper reason
+		}
+
 	}
 
 	public boolean isSigninlinkVisible() {
@@ -220,9 +218,9 @@ public class RegisterPage {
 
 	public void clickRRegisterlink() {
 		wait.until(ExpectedConditions.visibilityOf(clickregisterlink));
-		wait.until(ExpectedConditions.elementToBeClickable(clickregisterlink)).click();// TODO Auto-generated method stub
-		
+		wait.until(ExpectedConditions.elementToBeClickable(clickregisterlink)).click();// TODO Auto-generated method
+																						// stub
+
 	}
-	
 
 }

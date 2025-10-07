@@ -1,569 +1,394 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="0" failed="0" skipped="10">
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-02T13:50:02 EDT" name="Default suite" finished-at="2025-10-02T13:50:03 EDT" duration-ms="549">
+  <suite started-at="2025-10-03T16:04:28 EDT" name="CrossBrowserSuite" finished-at="2025-10-03T16:05:44 EDT" duration-ms="75240">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-10-02T13:50:02 EDT" name="Default test" finished-at="2025-10-02T13:50:03 EDT" duration-ms="549">
+    <test started-at="2025-10-03T16:04:28 EDT" name="FirefoxTest" finished-at="2025-10-03T16:05:44 EDT" duration-ms="75240">
       <class name="testrunner1.TestRunner">
-        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="defineBrowser" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1759427402490" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- defineBrowser -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="setUpClass" finished-at="2025-10-02T13:50:02 EDT" duration-ms="358" status="PASS">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:28 EDT" name="defineBrowser" finished-at="2025-10-03T16:04:28 EDT" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1c504e66]]>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:28 EDT" name="setUpClass" finished-at="2025-10-03T16:04:29 EDT" duration-ms="436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1bb266b3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36127" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify error message for empty Password field during Login"]]>
+                <![CDATA["Verify User clicks on Register link to access registration page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36131" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Signin Link is visible from Home Page"]]>
+                <![CDATA["Verify User successfully registers with letters as username and other valid fields"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36160" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify that user able to land on Home page after entering valid Username and Password fields"]]>
+                <![CDATA["Verify that user receives error message for existing Username,Password and Password confirmation fields during registration"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36086" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify error message for empty Username field during Login"]]>
+                <![CDATA["Verify Username with space and other valid input fields"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34524" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify  error message for all empty fields during Login"]]>
+                <![CDATA["Verify that user receives error message for valid Username and all empty fields during registration"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36187" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify prompt to register is validated"]]>
+                <![CDATA["Verify User successfully registers with username containing digits and other valid fields"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34168" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Datastructures dropdown is visible"]]>
+                <![CDATA["Verify that user receives error message for empty Username and all valid fields during registration"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34072" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify error message for invalid Username field during Login"]]>
+                <![CDATA["Verify that user receives error message for all empty fields during registration"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36151" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify RegisterLink is visible on the login page"]]>
+                <![CDATA["Verify User successfully registers with @/./+/-/_ as username and other valid fields"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T13:50:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34071" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Signin navigates to home page"]]>
+                <![CDATA["Verify that user receives error message for valid Username,valid Password and empty Password confirmation fields during registration"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Page validation"]]>
+                <![CDATA["Register page Validation"]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeTest on method defineBrowser but has not been marked @Optional or defined
-in /private/var/folders/s0/d7qpbdsd3qx956_51v4gry680000gn/T/testng-eclipse--243841412/testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:264)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
-at org.testng.internal.Parameters.createParameters(Parameters.java:690)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:657)
-at org.testng.TestRunner.beforeRun(TestRunner.java:646)
-at org.testng.TestRunner.run(TestRunner.java:612)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@131ef10]" started-at="2025-10-02T13:50:02 EDT" name="tearDownClass" finished-at="2025-10-02T13:50:03 EDT" duration-ms="149" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="38959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user enters Password exactly 8 characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:39 EDT" duration-ms="36242" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user password can’t be too similar to other personal information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:41 EDT" duration-ms="38243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user enters Password  lessthan characters"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="38939" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user enters Password 6 characters and whitespaces"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:35 EDT" duration-ms="29813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify System rejects commonly used passwords"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:41 EDT" duration-ms="35819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify System rejects password that is entirely numeric"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="36976" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that user receives error message for mismatched Password and Password Confirmation field during registration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:23 EDT" duration-ms="18156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify NumpyNinja is visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:18 EDT" duration-ms="12848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify NumpyNinja navigates to corresponding page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:14 EDT" duration-ms="8975" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify RegisterLink is visible on the register page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:43 EDT" duration-ms="29059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify RegisterLink navigates to Register page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="24463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Signin Link is visible"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Register page Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:43 EDT" name="tearDownClass" finished-at="2025-10-03T16:05:44 EDT" duration-ms="365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testrunner1.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- CrossBrowserSuite -->
 </testng-results>

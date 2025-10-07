@@ -16,8 +16,8 @@ import java.util.List;
 public class HomePage {
 	WebDriver driver;
 	WebDriverWait wait;
-	//@FindBy(xpath = "//a[normalize-space(text())='Register']")
-	
+	// @FindBy(xpath = "//a[normalize-space(text())='Register']")
+
 	@FindBy(linkText = "Register")
 	WebElement registerlink;
 	@FindBy(xpath = "//div[@class = 'card-body d-flex flex-column']")
@@ -26,10 +26,13 @@ public class HomePage {
 	// @FindBy(xpath = "//a[@href='data-structures-introduction' and text()='Get
 	// Started']")
 	List<WebElement> parent;
-	
-	@FindBy(xpath = "//a[text()='Data Structures']") private WebElement dataStructures;
-	@FindBy(xpath = "//div[@class='dropdown-menu show']") private WebElement dropdownMenus;
-	@FindBy(xpath="//a[@class='dropdown-item']") private List<WebElement> dropdownItems;
+
+	@FindBy(xpath = "//a[text()='Data Structures']")
+	private WebElement dataStructures;
+	@FindBy(xpath = "//div[@class='dropdown-menu show']")
+	private WebElement dropdownMenus;
+	@FindBy(xpath = "//a[@class='dropdown-item']")
+	private List<WebElement> dropdownItems;
 //	private boolean itemFound;
 
 	public HomePage(WebDriver driver) {
@@ -44,9 +47,9 @@ public class HomePage {
 	}
 
 	public void clickRegisterLink() {
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	       wait.until(ExpectedConditions.elementToBeClickable(registerlink));
-	registerlink.click();
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(registerlink));
+		registerlink.click();
 	}
 
 	public void clickGettingStarted(String pythondatastructures) {
@@ -68,59 +71,53 @@ public class HomePage {
 		}
 	}
 
-	
-
 	public void clickRegisterLink(String linkText) {
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	        wait.until(ExpectedConditions.elementToBeClickable(registerlink));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.elementToBeClickable(registerlink));
 		registerlink.click();
 		// TODO Auto-generated method stub
-		
+
 	}
 
-	//public void clickRegisterLink(String linkText) {
-		// TODO Auto-generated method stub
-		
-	//}
+	// public void clickRegisterLink(String linkText) {
+	// TODO Auto-generated method stub
 
-	/*public Boolean dropDownlist(String moduleDetails) {
-		
-		wait.until(ExpectedConditions.visibilityOf(dataStructures));
-		dataStructures.click();
-        
-		//wait.until(ExpectedConditions.visibilityOfAllElements(dropdownItems));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='dropdown-menu show']"))); 
-	  System.out.println(dropdownItems.size());	 
-	  
-	   itemFound = false;
-       
-        for (WebElement item : dropdownItems) {
-        	
-        	System.out.print("line no  78 : " + item.getText());
-            if (item.getText().trim().equalsIgnoreCase(moduleDetails)) {
-                item.click();
-                String url = driver.getCurrentUrl();
-                System.out.println(url + ": In line 80");
-                
-                String expectedUrlEndpoint =  moduleDetails;
-                
-                 if (moduleDetails.contains("Linked List")) {
-                	 expectedUrlEndpoint = "linked-list";
-                 }
-                 if(url.toLowerCase().contains(expectedUrlEndpoint.toLowerCase())) {
-                	 System.out.print("URL contains endpoint details ");
-                	 itemFound = true;
-                 }else {
-                	 itemFound = false;
-                 }
-                
-                break;
-            }
-        }
+	// }
 
-		return itemFound;
-		
-		
-	}*/
+	/*
+	 * public Boolean dropDownlist(String moduleDetails) {
+	 * 
+	 * wait.until(ExpectedConditions.visibilityOf(dataStructures));
+	 * dataStructures.click();
+	 * 
+	 * //wait.until(ExpectedConditions.visibilityOfAllElements(dropdownItems));
+	 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
+	 * xpath("//div[@class='dropdown-menu show']")));
+	 * System.out.println(dropdownItems.size());
+	 * 
+	 * itemFound = false;
+	 * 
+	 * for (WebElement item : dropdownItems) {
+	 * 
+	 * System.out.print("line no  78 : " + item.getText()); if
+	 * (item.getText().trim().equalsIgnoreCase(moduleDetails)) { item.click();
+	 * String url = driver.getCurrentUrl(); System.out.println(url +
+	 * ": In line 80");
+	 * 
+	 * String expectedUrlEndpoint = moduleDetails;
+	 * 
+	 * if (moduleDetails.contains("Linked List")) { expectedUrlEndpoint =
+	 * "linked-list"; }
+	 * if(url.toLowerCase().contains(expectedUrlEndpoint.toLowerCase())) {
+	 * System.out.print("URL contains endpoint details "); itemFound = true; }else {
+	 * itemFound = false; }
+	 * 
+	 * break; } }
+	 * 
+	 * return itemFound;
+	 * 
+	 * 
+	 * }
+	 */
 
 }

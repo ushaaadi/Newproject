@@ -1,6 +1,7 @@
 package testrunner1;
 
 import org.testng.annotations.BeforeTest;
+//import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
@@ -10,18 +11,21 @@ import utilities.ConfigReader;
 
 @CucumberOptions(plugin = { "pretty", "html:target/cucumber-reports/report.html",
 		"json:target/cucumber-reports/report.json",
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" },
-        monochrome = true,//tags = "@DatastructuresTest",
-        features = {
-				"src/test/resources/features/Datastructures" }, glue = {"stepdefinition","hooks"})
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true,// tags =
+																										// "@LoginTests",//
+		features = { "src/test/resources/features" }, glue = { "stepdefinition", "hooks" })
 public class TestRunner extends AbstractTestNGCucumberTests {
 	@BeforeTest
-	@Parameters({"browser"})
+	@Parameters( {"browser" })
 	public void defineBrowser(String browser) throws Throwable {
+		//System.setProperty("browser", browser);
+
+
 		ConfigReader.setBrowserType(browser);
-		//System.out.println(browser);
+		 System.out.println(browser);
 		// DriverFactory.initializeDriver();
 	}
+
 //	@Override
 	@Override
 	@DataProvider(parallel = true)

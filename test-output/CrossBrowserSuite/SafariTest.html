@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SafariTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/10/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/22/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 02 13:32:01 EDT 2025</td>
+<td>Started on:</td><td>Fri Oct 03 15:59:55 EDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (878 ms)</td>
+<tr><td>Total time:</td><td>226 seconds (226608 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,125 +76,1125 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Signin navigates to home page", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace621064852", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace621064852'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Signin Link is visible", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace490286553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace490286553'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>10</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Signin Link is visible from Home Page", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2033433056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2033433056'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for valid Username,valid Password and empty Password confirmation fields during registration", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1306234842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1306234842'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message for empty Username field during Login", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2097076555", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2097076555'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User successfully registers with @/./+/-/_ as username and other valid fields", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2126628867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2126628867'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify prompt to register is validated", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1708499792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1708499792'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user enters Password exactly 8 characters", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: driver.version: SafariDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	... 8 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2990)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1281348247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1281348247'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:562)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: driver.version: SafariDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	... 8 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2990)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:309)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>197</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Datastructures dropdown is visible", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1431394233", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1431394233'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify System rejects commonly used passwords", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace456802448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456802448'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify  error message for all empty fields during Login", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace820970022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace820970022'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for mismatched Password and Password Confirmation field during registration", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1145177640", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1145177640'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message for empty Password field during Login", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2028333164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2028333164'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify RegisterLink is visible on the register page", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace328579711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace328579711'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user able to land on Home page after entering valid Username and Password fields", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1932802718", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1932802718'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify NumpyNinja navigates to corresponding page", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace741463068", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace741463068'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with another WebDriver session. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>10</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message for invalid Username field during Login", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1644543353", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1644543353'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User clicks on Register link to access registration page", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace526062251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace526062251'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 <tr>
-<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify RegisterLink is visible on the login page", "Login Page validation"</td>
-<td><div><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1388499679", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1388499679'><pre>java.lang.RuntimeException: browser not specified in the testng.xml
-	at utilities.ConfigReader.getBrowserType(ConfigReader.java:43)
-	at hooks.Hooks.setUp(Hooks.java:19)
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for valid Username and all empty fields during registration", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1104734857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104734857'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
 </pre></div></td>
-<td>0</td>
-<td>testrunner1.TestRunner@10aa41f2</td></tr>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify NumpyNinja is visible", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1241215149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1241215149'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for empty Username and all valid fields during registration", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace308803920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace308803920'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user enters Password  lessthan characters", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace933160649", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace933160649'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User successfully registers with username containing digits and other valid fields", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2007575600", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2007575600'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify User successfully registers with letters as username and other valid fields", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1003042096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1003042096'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify System rejects password that is entirely numeric", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace90503390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace90503390'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user enters Password 6 characters and whitespaces", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace325366527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace325366527'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user password can’t be too similar to other personal information", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2005753041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2005753041'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The session timed out while connecting to a Safari instance. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>40</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for existing Username,Password and Password confirmation fields during registration", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1230483914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1230483914'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify RegisterLink navigates to Register page", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1873241114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1873241114'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The Safari instance is already paired with a different session. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>10</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Username with space and other valid input fields", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1932699308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1932699308'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
+<tr>
+<td title='testrunner1.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testrunner1.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify that user receives error message for all empty fields during registration", "Register page Validation"</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div><a href='#' onClick='toggleBox("stack-trace445132567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace445132567'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not create a session: The automation session ended unexpected while attempting to pair with it. 
+Host info: host: &apos;AAPUs-MacBook-Air.local&apos;, ip: &apos;2601:cd:cb7f:da70:0:0:0:2c16%en0&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.7.4&apos;, java.version: &apos;24.0.1&apos;
+Driver info: org.openqa.selenium.safari.SafariDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: safari}]}]
+Capabilities {browserName: safari}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:173)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:84)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:80)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:57)
+	at org.openqa.selenium.safari.SafariDriver.&lt;init&gt;(SafariDriver.java:48)
+	at Base.Driverfactory.initializeDriver(Driverfactory.java:27)
+	at hooks.Hooks.setUp(Hooks.java:29)
+</pre></div></td>
+<td>11</td>
+<td>testrunner1.TestRunner@1ce24091</td></tr>
 </table><p>
 </body>
 </html>
