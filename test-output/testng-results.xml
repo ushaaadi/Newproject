@@ -1,394 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-03T16:04:28 EDT" name="CrossBrowserSuite" finished-at="2025-10-03T16:05:44 EDT" duration-ms="75240">
+  <suite started-at="2025-10-07T15:51:17 MDT" name="MasterSuite" finished-at="2025-10-07T15:51:21 MDT" duration-ms="4324">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@12468a38]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-10-03T16:04:28 EDT" name="FirefoxTest" finished-at="2025-10-03T16:05:44 EDT" duration-ms="75240">
+    <test started-at="2025-10-07T15:51:17 MDT" name="Test" finished-at="2025-10-07T15:51:21 MDT" duration-ms="4324">
       <class name="testrunner1.TestRunner">
-        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:28 EDT" name="defineBrowser" finished-at="2025-10-03T16:04:28 EDT" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@12468a38]" started-at="2025-10-07T15:51:17 MDT" name="setUpClass" finished-at="2025-10-07T15:51:18 MDT" duration-ms="1019" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- defineBrowser -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:28 EDT" name="setUpClass" finished-at="2025-10-03T16:04:29 EDT" duration-ms="436" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1bb266b3]]>
+                <![CDATA[org.testng.TestRunner@776aec5c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36127" status="PASS">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:testrunner1.TestRunner@12468a38]" started-at="2025-10-07T15:51:18 MDT" name="defineBrowser" finished-at="2025-10-07T15:51:18 MDT" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify User clicks on Register link to access registration page"]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@12468a38]" started-at="2025-10-07T15:51:18 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-07T15:51:21 MDT" duration-ms="2824" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Signin Link is visible from Home Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Register page Validation"]]>
+                <![CDATA["Login Page validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36131" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify User successfully registers with letters as username and other valid fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36160" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error message for existing Username,Password and Password confirmation fields during registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36086" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Username with space and other valid input fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error message for valid Username and all empty fields during registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36187" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify User successfully registers with username containing digits and other valid fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34168" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error message for empty Username and all valid fields during registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34072" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error message for all empty fields during registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:05 EDT" duration-ms="36151" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify User successfully registers with @/./+/-/_ as username and other valid fields"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:04:29 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:03 EDT" duration-ms="34071" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error message for valid Username,valid Password and empty Password confirmation fields during registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="38959" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user enters Password exactly 8 characters"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:39 EDT" duration-ms="36242" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user password can’t be too similar to other personal information"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:41 EDT" duration-ms="38243" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user enters Password  lessthan characters"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="38939" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify user enters Password 6 characters and whitespaces"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:35 EDT" duration-ms="29813" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify System rejects commonly used passwords"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:41 EDT" duration-ms="35819" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify System rejects password that is entirely numeric"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="36976" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify that user receives error message for mismatched Password and Password Confirmation field during registration"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:23 EDT" duration-ms="18156" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify NumpyNinja is visible"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:18 EDT" duration-ms="12848" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify NumpyNinja navigates to corresponding page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:05 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:14 EDT" duration-ms="8975" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify RegisterLink is visible on the register page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:43 EDT" duration-ms="29059" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify RegisterLink navigates to Register page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-03T16:05:42 EDT" duration-ms="24463" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Signin Link is visible"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Register page Validation"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@1ce24091]" started-at="2025-10-03T16:05:43 EDT" name="tearDownClass" finished-at="2025-10-03T16:05:44 EDT" duration-ms="365" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testrunner1.TestRunner@12468a38]" started-at="2025-10-07T15:51:21 MDT" name="tearDownClass" finished-at="2025-10-07T15:51:21 MDT" duration-ms="420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- testrunner1.TestRunner -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- CrossBrowserSuite -->
+    </test> <!-- Test -->
+  </suite> <!-- MasterSuite -->
 </testng-results>
