@@ -14,6 +14,7 @@ import io.cucumber.java.en.When;
 import pageobject.LoginPage;
 import utilities.ConfigReader;
 import utilities.Excelreader;
+import utilities.LoggerLoad;
 
 public class LoginTests extends BaseSteps {
 	LoginPage loginpage;
@@ -27,6 +28,7 @@ public class LoginTests extends BaseSteps {
 		loginpage = new LoginPage(driver);
 		loginpage.openloginpage();
 		System.out.println("user is on the loging page");
+		LoggerLoad.info("user is on the given page");
 
 	}
 
@@ -195,6 +197,7 @@ public class LoginTests extends BaseSteps {
 		// loginpage.userclickssigninlink();
 
 		Assert.assertTrue(loginpage.isSigninLinkVisible(), "Signin link is not visible on login page!");
+		
 	}
 
 	@Then("User should see Signin Link")

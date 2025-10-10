@@ -6,47 +6,48 @@ import java.util.Properties;
 
 public class ConfigReader {
 	private static Properties properties = new Properties();
-	// private static String browserType = null;
-	private static ThreadLocal<String> browserType = new ThreadLocal<>();
+	private static String browserType = null;
+	//private static ThreadLocal<String> browserType = new ThreadLocal<>();
 
 	static {
-		try (InputStream input = ConfigReader.class.getClassLoader().getResourceAsStream("config.properties")) {
+		try (InputStream input = ConfigReader.class.getClassLoader().getResourceAsStream("Config.properties")) {
 			if (input == null) {
-				throw new RuntimeException("config.properties not found in classpath");
+				throw new RuntimeException("Config.properties not found in classpath");
 			}
 			properties.load(input);
 		} catch (IOException e) {
-			throw new RuntimeException("Failed to load config.properties: " + e.getMessage());
+			throw new RuntimeException("Failed to load Config.properties: " + e.getMessage());
 		}
 	}
 
 	public static String get(String key) {
 		String value = properties.getProperty(key);
 		if (value == null) {
-			throw new RuntimeException("Property '" + key + "' not found in config.properties");
+			throw new RuntimeException("Property '" + key + "' not found in Config.properties");
 		}
 		return value;
 	}
 
 	public static void setBrowserType(String browser) {
 
-		browserType.set(browser);
-
+	//	browserType.set(browser);
+		
+      browserType = browser;
 	}
 
 	public static String getBrowserType() throws Throwable {
 
-		String browser = browserType.get();
-		if (browser != null)
+	//	String browser = browserType.get();
+		if (browserType != null)
 
-			return browser;
+			return browserType;
 		else
 			throw new RuntimeException("browser not specified in the testng.xml");
 
 	}
 
 	public static void removeBrowserType() {
-		browserType.remove();
+		//browserType.remove();
 		;
 	}
 

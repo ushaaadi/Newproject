@@ -28,7 +28,7 @@
         </suiteXmlFiles>
         
         <systemPropertyVariables>
-  <browser>chrome</browser>
+  <browser>firefox</browser>
 </systemPropertyVariables>
 
         <properties>
