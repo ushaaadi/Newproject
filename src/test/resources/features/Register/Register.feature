@@ -3,7 +3,8 @@ Feature: Register page Validation
 Scenario: Verify User clicks on Register link to access registration page
     Given User is on DS algo home page
     When User clicks on the Register link in the Home Page
-    Then User is directed to the registration page  where they can fill out the signup form 
+    Then User is directed to the registration page  where they can fill out the signup form
+
 Scenario: Verify User successfully registers with letters as username and other valid fields
     Given User on Registration page
     When User clicks Register button after entering Username with letters

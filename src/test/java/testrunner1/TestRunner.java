@@ -17,10 +17,12 @@ import utilities.ConfigReader;
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
 		}, 
         monochrome = true,
-        tags = "@LoginTests",
+        tags = "",
 																										
 		features = { "src/test/resources/features" },
-		glue = { "stepdefinition", "hooks" })
+		glue = { "stepdefinition", "hooks" }
+)
+
 public class TestRunner extends AbstractTestNGCucumberTests {
 	@BeforeTest
 	 @Parameters("browser")

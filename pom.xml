@@ -26,12 +26,7 @@
         <suiteXmlFiles>
           <suiteXmlFile>testng.xml</suiteXmlFile>
         </suiteXmlFiles>
-        
-        <systemPropertyVariables>
-  <browser>chrome</browser>
-</systemPropertyVariables>
-
-        <properties>
+            <properties>
   <dataproviderthreadcount>30</dataproviderthreadcount>
   <parallel>tests</parallel>
   <threadCount>7</threadCount>
@@ -165,11 +160,7 @@
 			<version>1.0-beta</version>
 		</dependency>
 
-		<dependency>
-			<groupId>finpro</groupId>
-			<artifactId>finpro</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
 
 
 </dependencies>

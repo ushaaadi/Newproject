@@ -10,18 +10,20 @@ public class ConfigReader {
 	//private static ThreadLocal<String> browserType = new ThreadLocal<>();
 
 	static {
-		try (InputStream input = ConfigReader.class.getClassLoader().getResourceAsStream("Config.properties")) {
+		try (InputStream input = ConfigReader.class.getClassLoader().getResourceAsStream("config.properties")) {
 			if (input == null) {
-				throw new RuntimeException("Config.properties not found in classpath");
+				throw new RuntimeException("config.properties not found in classpath");
 			}
 			properties.load(input);
 		} catch (IOException e) {
-			throw new RuntimeException("Failed to load Config.properties: " + e.getMessage());
+			throw new RuntimeException("Failed to load config.properties: " + e.getMessage());
 		}
 	}
 
 	public static String get(String key) {
+
 		String value = properties.getProperty(key);
+		System.out.println(value);
 		if (value == null) {
 			throw new RuntimeException("Property '" + key + "' not found in Config.properties");
 		}
